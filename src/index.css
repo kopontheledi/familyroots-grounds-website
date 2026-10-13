@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+body { margin: 0; font-family: "DM Sans", sans-serif; }
+.hero-photo {
+  background-image: url("https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=2200&q=85");
+  background-position: center 54%;
+  background-size: cover;
+}
+.about-photo {
+  background-image: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85");
+  background-position: center;
+  background-size: cover;
+}
+.section-title {
+  margin-top: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(2.1rem, 4vw, 3rem);
+  font-weight: 750;
+  line-height: 1.12;
+  letter-spacing: -0.055em;
+  color: #173b2a;
+}
+.section-title span { color: #789e43; }
+.form-control { display: block; }
+.form-control input,
+.form-control select,
+.form-control textarea {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  border: 1px solid #e0e5db;
+  border-radius: 3px;
+  background: #fbfcf9;
+  padding: 12px 13px;
+  color: #243d2c;
+  font: 400 12px "DM Sans", sans-serif;
+  outline: none;
+}
+.form-control input:focus,
+.form-control select:focus,
+.form-control textarea:focus {
+  border-color: #8bad65;
+  box-shadow: 0 0 0 2px rgba(139, 173, 101, 0.14);
+}
+.form-control textarea { resize: vertical; }
+@media (max-width: 640px) {
+  .hero-photo { background-position: 58% center; }
+}
